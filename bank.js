@@ -30,13 +30,6 @@ Bank.prototype.payInterest = function(){
     return account;
   })
 }
-//
-// Bank.prototype.payInterest = function () {
-//   this.accounts = this.accounts.map(function (account) {
-//     var newAccountValue = account.value * 1.1
-//     return new Account(account.name, newAccountValue, account.type)
-//   })
-// }
 
 Bank.prototype.businessAccounts = function(){
   const businessAccounts = this.accounts.filter(function(account){
